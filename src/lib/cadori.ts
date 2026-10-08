@@ -1,3 +1,12 @@
+import p1 from "@/assets/produtos/produto-1.jpg.asset.json";
+import p2 from "@/assets/produtos/produto-2.jpg.asset.json";
+import p3 from "@/assets/produtos/produto-3.jpg.asset.json";
+import p4 from "@/assets/produtos/produto-4.jpg.asset.json";
+import p5 from "@/assets/produtos/produto-5.jpg.asset.json";
+import p6 from "@/assets/produtos/produto-6.jpg.asset.json";
+import p7 from "@/assets/produtos/produto-7.jpg.asset.json";
+import p8 from "@/assets/produtos/produto-8.jpg.asset.json";
+
 export const contato = {
   telefone: "(47) 3350-1115",
   telefoneHref: "tel:4733501115",
@@ -20,13 +29,13 @@ export const marcas = [
 ];
 
 export const produtos = [
-  { nome: "Motor W22 Magnet Super Premium", marca: "WEG", categoria: "Motores", desc: "Motor elétrico com rendimento Super Premium e maior eficiência energética." },
-  { nome: "ME-1", marca: "Schneider", categoria: "Motobombas", desc: "Motobomba multiestágio de alta pressão, de 2 a 9 estágios." },
-  { nome: "Lavadora K 3.30", marca: "Kärcher", categoria: "Lavadoras", desc: "Lavadora de alta pressão residencial para limpezas do dia a dia." },
-  { nome: "Lavadora HD 10/18 – 4 Cage", marca: "Kärcher", categoria: "Lavadoras", desc: "Lavadora de alta pressão profissional para uso intenso." },
-  { nome: "Cortador de grama MC-35L", marca: "Trapp", categoria: "Jardim", desc: "Cortador elétrico para jardins residenciais." },
-  { nome: "Roçadeira Master 1", marca: "Trapp", categoria: "Jardim", desc: "Roçadeira lateral elétrica para grama e vegetação mais alta." },
-  { nome: "CSL 10BR/100", marca: "Schulz", categoria: "Compressores", desc: "Compressor de ar com reservatório de 100 litros." },
-  { nome: "DS-04", marca: "Schneider", categoria: "Motobombas", desc: "Bomba submersível para fontes e chafarizes." },
-  { nome: "BC-92 S", marca: "Schneider", categoria: "Motobombas", desc: "Motobomba centrífuga para água limpa." },
+  { img: p1.url, nome: "Motor W22 Magnet Super Premium", marca: "WEG", categoria: "Motores", desc: "Motor elétrico com rendimento Super Premium e maior eficiência energética." },
+  { img: p2.url, nome: "ME-1", marca: "Schneider", categoria: "Motobombas", desc: "Motobomba multiestágio de alta pressão, de 2 a 9 estágios." },
+  { img: p3.url, nome: "Lavadora K 3.30", marca: "Kärcher", categoria: "Lavadoras", desc: "Lavadora de alta pressão residencial para limpezas do dia a dia." },
+  { img: p4.url, nome: "Lavadora HD 10/18 – 4 Cage", marca: "Kärcher", categoria: "Lavadoras", desc: "Lavadora de alta pressão profissional para uso intenso." },
+  { img: p5.url, nome: "Cortador de grama MC-35L", marca: "Trapp", categoria: "Jardim", desc: "Cortador elétrico para jardins residenciais." },
+  { img: p6.url, nome: "Roçadeira Master 1", marca: "Trapp", categoria: "Jardim", desc: "Roçadeira lateral elétrica para grama e vegetação mais alta." },
+  { img: p7.url, nome: "CSL 10BR/100", marca: "Schulz", categoria: "Compressores", desc: "Compressor de ar com reservatório de 100 litros." },
+  { img: p8.url, nome: "DS-04", marca: "Schneider", categoria: "Motobombas", desc: "Bomba submersível para fontes e chafarizes." },
+  { img: undefined as string | undefined, nome: "BC-92 S", marca: "Schneider", categoria: "Motobombas", desc: "Motobomba centrífuga para água limpa." },
 ];
