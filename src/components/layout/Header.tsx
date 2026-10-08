@@ -31,7 +31,7 @@ const Header = () => {
 
       <div className="container mx-auto px-4 md:px-8 flex items-center justify-between py-3 gap-6">
         <Link to="/" className="animate-logo">
-          <img src={logoHd} alt="Eletromecânica Cadori" className="h-24 md:h-36 lg:h-52 w-auto" />
+          <img src={logoHd} alt="Eletromecânica Cadori" className="h-14 md:h-20 lg:h-28 w-auto max-w-[55vw] lg:max-w-[460px] object-contain" />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-8">
