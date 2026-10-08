@@ -23,6 +23,7 @@ const Produtos = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {lista.map((p) => (
               <div key={p.nome} className="bg-cream rounded-xl p-6 flex flex-col">
+                {p.img && <div className="bg-background rounded-lg mb-4 aspect-[3/4] flex items-center justify-center overflow-hidden"><img src={p.img} alt={p.nome} loading="lazy" className="w-full h-full object-contain" /></div>}
                 <span className="text-xs font-bold uppercase tracking-widest text-primary">{p.marca} · {p.categoria}</span>
                 <h3 className="font-display uppercase text-2xl font-bold text-navy-900 mt-1 mb-2">{p.nome}</h3>
                 <p className="text-sm text-muted-foreground flex-1">{p.desc}</p>
