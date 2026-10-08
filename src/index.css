@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700;1,800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,7 +7,7 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 220 26% 14%;
+    --foreground: 234 40% 14%;
 
     --card: 0 0% 100%;
     --card-foreground: 220 26% 14%;
@@ -15,16 +15,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 26% 14%;
 
-    --primary: 218 68% 15%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 358 82% 47%;
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 210 40% 96.1%;
-    --secondary-foreground: 218 68% 15%;
+    --secondary-foreground: 234 58% 30%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215 16% 47%;
 
-    --accent: 245 58% 63%;
+    --accent: 234 58% 33%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -32,23 +32,23 @@
 
     --border: 214 32% 91%;
     --input: 214 32% 91%;
-    --ring: 245 58% 63%;
+    --ring: 358 82% 47%;
 
     --radius: 0.5rem;
 
-    --navy-900: 218 68% 15%;
-    --navy-800: 216 44% 19%;
-    --navy-700: 216 33% 27%;
-    --navy-600: 216 30% 34%;
+    --navy-900: 234 58% 24%;
+    --navy-800: 234 55% 30%;
+    --navy-700: 234 58% 33%;
+    --navy-600: 234 45% 42%;
 
-    --purple-600: 245 58% 55%;
-    --purple-500: 245 69% 69%;
-    --purple-400: 245 80% 76%;
-    --purple-300: 245 85% 82%;
-    --purple-100: 245 100% 93%;
+    --purple-600: 358 82% 40%;
+    --purple-500: 358 82% 47%;
+    --purple-400: 358 85% 60%;
+    --purple-300: 358 90% 85%;
+    --purple-100: 358 100% 95%;
 
-    --cream: 250 100% 98%;
-    --cream-dark: 248 40% 93%;
+    --cream: 230 40% 97%;
+    --cream-dark: 230 30% 92%;
     --sage: 245 30% 93%;
 
     --amber-600: 38 92% 50%;
@@ -74,7 +74,7 @@
   }
   body {
     @apply bg-background text-foreground font-sans;
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: 'Barlow', system-ui, sans-serif;
   }
 }
 
