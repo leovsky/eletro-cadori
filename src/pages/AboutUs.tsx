@@ -1,92 +1,33 @@
 import Layout from "@/components/layout/Layout";
-import { images } from "@/lib/images";
+import PageHeader from "@/components/PageHeader";
+import hero from "@/assets/hero-oficina.jpg";
+import { marcas } from "@/lib/cadori";
 
-const values = [
-  {
-    title: "Specialised personal injury lawyers",
-    bg: "bg-navy-700",
-  },
-  {
-    title: "Accessible and personal",
-    bg: "bg-purple-500",
-  },
-  {
-    title: "Practical and clear",
-    bg: "bg-purple-300",
-  },
-];
-
-const AboutUs = () => {
-  return (
-    <Layout>
-      {/* Hero */}
-      <section className="py-20 md:py-28 bg-background">
-        <div className="container mx-auto px-4 md:px-8">
-          <div className="grid md:grid-cols-2 gap-16 items-start">
-            <div>
-              <h1 className="font-display text-4xl md:text-5xl font-bold text-purple-400 leading-tight">
-                Apex<br />
-                Personal Injury<br />
-                <span className="italic">Lawyers</span>
-              </h1>
-            </div>
-            <div>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                Injury following a car accident. An accident at work. A medical error. Or a serious injury caused by foul play during a sports match. Injuries due to someone else's mistake can occur in a number of different ways, often when you least expect it. In addition to physical, psychological and financial damage, an accident can also cause worry and uncertainty. What should you do next?
-              </p>
-              <p className="text-muted-foreground leading-relaxed">
-                Fortunately, our personal injury lawyers are here to help. We maintain close support and, if there is no other option, we will litigate to recover your damages.
-              </p>
-            </div>
-          </div>
+const AboutUs = () => (
+  <Layout>
+    <PageHeader titulo="Quem" destaque="Somos" sub="Uma história de competência e dedicação aos clientes desde 1982." />
+    <section className="py-20 bg-background">
+      <div className="container mx-auto px-4 md:px-8 grid md:grid-cols-2 gap-14 items-center">
+        <div className="space-y-5 text-lg text-muted-foreground leading-relaxed">
+          <h2 className="font-display uppercase text-4xl font-bold text-navy-900">Nossa <span className="italic text-primary">história</span></h2>
+          <p>A Eletro Mecânica Cadori foi fundada em outubro de 1982, em Brusque-SC, para prestar serviços de elétrica industrial e residencial, consertar aparelhos domésticos e recuperar motores elétricos e equipamentos industriais.</p>
+          <p>Com o passar dos anos, a empresa conquistou espaço no mercado e foi reconhecida pela competência, pela qualidade dos serviços e pela dedicação aos clientes.</p>
+          <p>Hoje o foco principal é a área industrial. A Cadori também revende produtos, motores elétricos e peças de reposição, e é assistência técnica autorizada de {marcas.map((m) => m.nome).join(", ")}.</p>
         </div>
-      </section>
-
-      {/* Full-width team image */}
-      <div className="w-full h-64 md:h-80 overflow-hidden">
-        <img
-          src={images.teamPhoto}
-          alt="Our diverse team of legal professionals"
-          className="w-full h-full object-cover"
-        />
+        <img src={hero} alt="Oficina da Eletro Mecânica Cadori" loading="lazy" width={1280} height={960} className="rounded-2xl shadow-xl w-full object-cover" />
       </div>
-
-      {/* Why Apex */}
-      <section className="py-20 md:py-28 bg-background">
-        <div className="container mx-auto px-4 md:px-8">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-purple-400 text-center mb-12 italic">
-            Why Apex
-          </h2>
-          <div className="grid md:grid-cols-3 gap-4">
-            {values.map((v) => (
-              <div
-                key={v.title}
-                className={`${v.bg} ${v.bg === "bg-purple-300" ? "text-navy-900" : "text-white"} rounded-2xl p-8 flex items-center justify-center text-center min-h-[140px]`}
-              >
-                <h3 className="text-lg font-bold leading-snug">{v.title}</h3>
-              </div>
-            ))}
+    </section>
+    <section className="py-16 bg-cream">
+      <div className="container mx-auto px-4 md:px-8 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+        {[["1982", "Ano de fundação"], ["40+", "Anos de experiência"], [String(marcas.length), "Marcas autorizadas"]].map(([n, l]) => (
+          <div key={l} className="bg-background rounded-xl p-8 border-b-4 border-primary">
+            <p className="font-display text-6xl font-extrabold text-navy-900">{n}</p>
+            <p className="text-muted-foreground uppercase tracking-widest text-sm mt-2">{l}</p>
           </div>
-        </div>
-      </section>
-
-      {/* Who we are */}
-      <section className="py-20 md:py-28 bg-background">
-        <div className="container mx-auto px-4 md:px-8 max-w-3xl">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-navy-900 mb-2">
-            <span className="italic">Who</span> we are
-          </h2>
-          <div className="w-16 h-1 bg-purple-500 rounded-full mb-8" />
-          <p className="text-muted-foreground leading-relaxed">
-            As specialised personal injury lawyers with many years of experience behind us, we continue where a personal injury expert stops. While a personal injury expert cannot litigate on your behalf, we can. This makes us a reliable partner for insurers, so that you have a greater chance of achieving the very best result. We maintain a clear, practical and personal approach. We have short lines of communication so that there are no unnecessary delays in the handling of your case!
-          </p>
-        </div>
-      </section>
-
-      {/* Cream spacer */}
-      <section className="bg-cream py-20 md:py-28" />
-    </Layout>
-  );
-};
+        ))}
+      </div>
+    </section>
+  </Layout>
+);
 
 export default AboutUs;
