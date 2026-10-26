@@ -11,6 +11,7 @@ const Produtos = () => {
     return ["Todos", ...ordemMarcas, ...Array.from(presentes).filter((marca) => !ordemMarcas.includes(marca))];
   }, []);
   const [marca, setMarca] = useState("Todos");
+  const [descricoesExpandidas, setDescricoesExpandidas] = useState<Set<string>>(() => new Set());
   const lista = marca === "Todos" ? produtos : produtos.filter((p) => p.marca === marca);
 
   return (
@@ -39,7 +40,34 @@ const Produtos = () => {
                   {p.img && <div className="bg-background rounded-lg mb-4 aspect-[3/4] flex items-center justify-center overflow-hidden"><img src={p.img} alt={p.nome} loading="lazy" className="w-full h-full object-contain" /></div>}
                   <span className="text-xs font-bold uppercase tracking-widest text-primary">{p.marca}</span>
                   <h3 className="font-display uppercase text-base md:text-2xl font-bold text-navy-900 mt-1 mb-2 leading-tight">{p.nome}</h3>
-                  <p className="text-xs md:text-sm text-muted-foreground flex-1 hidden sm:block">{p.desc}</p>
+                  <div className="flex-1">
+                    <p
+                      className="text-xs md:text-sm text-muted-foreground"
+                      style={descricoesExpandidas.has(p.nome) ? undefined : {
+                        display: "-webkit-box",
+                        WebkitLineClamp: 2,
+                        WebkitBoxOrient: "vertical",
+                        overflow: "hidden",
+                      }}
+                    >
+                      {p.desc}
+                    </p>
+                    {p.desc.length > 100 && (
+                      <button
+                        type="button"
+                        aria-expanded={descricoesExpandidas.has(p.nome)}
+                        onClick={() => setDescricoesExpandidas((atuais) => {
+                          const novas = new Set(atuais);
+                          if (novas.has(p.nome)) novas.delete(p.nome);
+                          else novas.add(p.nome);
+                          return novas;
+                        })}
+                        className="mt-1 text-xs md:text-sm font-semibold text-primary hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded-sm"
+                      >
+                        {descricoesExpandidas.has(p.nome) ? "Ver menos" : "Ver mais..."}
+                      </button>
+                    )}
+                  </div>
                   <a href={`${contato.whatsappHref}?text=${encodeURIComponent(`Olá! Gostaria de um orçamento: ${p.nome}`)}`} target="_blank" rel="noreferrer"
                     className="mt-auto pt-3 self-start text-sm font-semibold text-navy-900 hover:text-primary">Pedir orçamento →</a>
                 </article>
