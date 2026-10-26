@@ -35,6 +35,9 @@ jobs:
       - name: Build website
         run: npm run build -- --base=/eletro-cadori/
 
+      - name: Support direct navigation to application routes
+        run: cp dist/index.html dist/404.html
+
       - name: Upload build
         uses: actions/upload-pages-artifact@v3
         with:
