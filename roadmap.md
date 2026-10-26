@@ -3,4 +3,6 @@
 - [x] Align Vite production base and React Router without duplicated prefixes.
 - [x] Audit resource paths and preserve design and content.
 - [x] Add GitHub Pages fallback for direct internal route visits.
-- [ ] Run routing regressions and validate generated production output at /eletro-cadori/.
+- [x] Pass 11 regression tests and verify the real homepage and internal navigation with the deployment base injected in the local browser.
+- [x] Confirm automatic compilation reports build OK; add generated-output validation to the GitHub Pages workflow.
+- [ ] Verify the new generated production output on GitHub Pages. Blocker: the updated GitHub Actions deployment has not been observed; automatic local build artifacts are not exposed in this sandbox.
