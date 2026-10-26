@@ -38,7 +38,7 @@ jobs:
       - name: Support direct navigation to application routes
         run: cp dist/index.html dist/404.html
 
-      - name: Validate published base and bundled product images
+      - name: Validate published base and product images
         run: |
           node --input-type=module <<'NODE'
           import assert from 'node:assert/strict';
@@ -51,13 +51,18 @@ jobs:
             assert(path.startsWith('/eletro-cadori/'), `Incorrect public base: ${path}`);
             assert(existsSync(`dist/${path.slice('/eletro-cadori/'.length)}`), `Missing resource: ${path}`);
           }
-          const assets = readdirSync('dist/assets');
-          for (let product = 1; product <= 8; product++) {
-            assert(assets.some(name => name.startsWith(`produto-${product}-`) && name.endsWith('.jpg')),
-              `Missing bundled product image ${product}`);
+          const productDir = 'dist/images/produtos';
+          assert(existsSync(productDir), 'Missing public/images/produtos output directory');
+          const images = readdirSync(productDir).filter(name => /\\.(jpe?g|png|webp)$/i.test(name));
+          assert(images.length >= 125, `Expected at least 125 product images, found ${images.length}`);
+          const catalog = readFileSync('src/lib/cadori.ts', 'utf8');
+          for (const image of images) {
+            if (catalog.includes(image)) {
+              assert(existsSync(`${productDir}/${image}`), `Missing catalog image: ${image}`);
+            }
           }
           assert.equal(readFileSync('dist/404.html', 'utf8'), html);
-          console.log('Public base, local resources, eight product images and route fallback validated');
+          console.log(`Public base, local resources, ${images.length} product images and route fallback validated`);
           NODE
 
       - name: Upload build
