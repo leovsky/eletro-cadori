@@ -1,7 +1,9 @@
-// @vitest-environment node
-import { afterEach, describe, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { portableAssets } from "../../build/portable-assets";
 
+beforeEach(() => {
+  vi.stubGlobal("AbortSignal", { timeout: () => new AbortController().signal });
+});
 afterEach(() => vi.unstubAllGlobals());
 
 describe("portable product assets", () => {
