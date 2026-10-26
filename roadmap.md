@@ -1,5 +1,6 @@
 # GitHub Pages subpath compatibility
 
+- [ ] Fix the missing portable-assets import and verify configuration loading and regression tests.
 - [x] Align Vite production base and React Router without duplicated prefixes.
 - [x] Audit resource paths and preserve design and content.
 - [x] Add GitHub Pages fallback for direct internal route visits.
