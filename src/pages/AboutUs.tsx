@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { X } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import PageHeader from "@/components/PageHeader";
 import { marcas } from "@/lib/cadori";
@@ -16,9 +16,7 @@ const galeria = [
 ];
 
 const AboutUs = () => {
-  const [indice, setIndice] = useState(0);
-  const anterior = () => setIndice((atual) => (atual - 1 + galeria.length) % galeria.length);
-  const proximo = () => setIndice((atual) => (atual + 1) % galeria.length);
+  const [imagemAberta, setImagemAberta] = useState<(typeof galeria)[number] | null>(null);
 
   return (
     <Layout>
@@ -39,26 +37,31 @@ const AboutUs = () => {
             <h2 className="font-display uppercase text-3xl md:text-4xl font-bold text-navy-900">Nossa <span className="italic text-primary">estrutura</span></h2>
             <p className="mt-3 text-muted-foreground">Conheça um pouco da nossa história e do nosso espaço.</p>
           </div>
-          <div className="max-w-5xl mx-auto">
-            <div className="relative overflow-hidden rounded-2xl bg-background shadow-lg">
-              <img key={galeria[indice].src} src={galeria[indice].src} alt={galeria[indice].alt} loading="lazy" className="w-full h-[260px] sm:h-[380px] md:h-[500px] object-contain md:object-cover" />
-              <button type="button" onClick={anterior} aria-label="Imagem anterior" className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full bg-background/90 text-navy-900 p-2 md:p-3 shadow-md hover:bg-primary hover:text-primary-foreground transition-colors">
-                <ChevronLeft className="h-5 w-5 md:h-6 md:w-6" />
+          <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-5">
+            {galeria.map((imagem) => (
+              <button key={imagem.src} type="button" onClick={() => setImagemAberta(imagem)}
+                aria-label={`Ampliar imagem: ${imagem.alt}`}
+                className="group overflow-hidden rounded-xl bg-background shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-primary">
+                <img src={imagem.src} alt={imagem.alt} loading="lazy"
+                  className="w-full h-32 sm:h-40 md:h-36 lg:h-44 object-cover transition-transform duration-300 group-hover:scale-105" />
               </button>
-              <button type="button" onClick={proximo} aria-label="Próxima imagem" className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full bg-background/90 text-navy-900 p-2 md:p-3 shadow-md hover:bg-primary hover:text-primary-foreground transition-colors">
-                <ChevronRight className="h-5 w-5 md:h-6 md:w-6" />
-              </button>
-            </div>
-            <div className="mt-5 flex justify-center gap-3" role="group" aria-label="Selecionar imagem da galeria">
-              {galeria.map((imagem, i) => (
-                <button key={imagem.src} type="button" onClick={() => setIndice(i)} aria-label={`Mostrar imagem ${i + 1}: ${imagem.alt}`} aria-pressed={indice === i}
-                  className={`h-2.5 rounded-full transition-all ${indice === i ? "w-8 bg-primary" : "w-2.5 bg-muted-foreground/40 hover:bg-primary/60"}`} />
-              ))}
-            </div>
-            <p className="text-center text-sm text-muted-foreground mt-3">{indice + 1} de {galeria.length}</p>
+            ))}
           </div>
         </div>
       </section>
+      {imagemAberta && (
+        <div role="dialog" aria-modal="true" aria-label={imagemAberta.alt}
+          onClick={() => setImagemAberta(null)}
+          onKeyDown={(event) => { if (event.key === "Escape") setImagemAberta(null); }}
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 md:p-8">
+          <button type="button" onClick={() => setImagemAberta(null)} aria-label="Fechar imagem"
+            className="absolute right-4 top-4 rounded-full bg-white/15 p-3 text-white hover:bg-white/25">
+            <X className="h-6 w-6" />
+          </button>
+          <img src={imagemAberta.src} alt={imagemAberta.alt} onClick={(event) => event.stopPropagation()}
+            className="max-h-[88vh] max-w-full rounded-lg object-contain" />
+        </div>
+      )}
       <section className="py-14 md:py-16 bg-background">
         <div className="container mx-auto px-4 md:px-8 grid grid-cols-1 sm:grid-cols-3 gap-5 md:gap-6 text-center">
           {[[ "1982", "Ano de fundação" ], [ "40+", "Anos de experiência" ], [ String(marcas.length), "Marcas atendidas" ]].map(([n, l]) => (
