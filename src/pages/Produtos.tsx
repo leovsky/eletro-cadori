@@ -8,7 +8,7 @@ const ordemMarcas = ["Kärcher", "Trapp", "Schneider", "WEG", "Schulz", "Garthen
 const Produtos = () => {
   const marcasDisponiveis = useMemo(() => {
     const presentes = new Set(produtos.map((p) => p.marca));
-    return ["Todos", ...ordemMarcas.filter((marca) => presentes.has(marca)), ...Array.from(presentes).filter((marca) => !ordemMarcas.includes(marca))];
+    return ["Todos", ...ordemMarcas, ...Array.from(presentes).filter((marca) => !ordemMarcas.includes(marca))];
   }, []);
   const [marca, setMarca] = useState("Todos");
   const lista = marca === "Todos" ? produtos : produtos.filter((p) => p.marca === marca);
