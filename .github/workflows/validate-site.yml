@@ -1,4 +1,5 @@
 name: Validate site
+# Automated build check for the Cadori validation branch.
 
 on:
   pull_request:
