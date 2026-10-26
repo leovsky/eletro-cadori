@@ -40,7 +40,7 @@ const Produtos = () => {
                   {p.img && <div className="bg-background rounded-lg mb-4 aspect-[3/4] flex items-center justify-center overflow-hidden"><img src={p.img} alt={p.nome} loading="lazy" className="w-full h-full object-contain" /></div>}
                   <span className="text-xs font-bold uppercase tracking-widest text-primary">{p.marca}</span>
                   <h3 className="font-display uppercase text-base md:text-2xl font-bold text-navy-900 mt-1 mb-2 leading-tight">{p.nome}</h3>
-                  <div className="flex-1">
+                  <div className="flex-1 hidden sm:block">
                     <p
                       className="text-xs md:text-sm text-muted-foreground"
                       style={descricoesExpandidas.has(p.nome) ? undefined : {
