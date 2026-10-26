@@ -14,9 +14,9 @@ describe("portable product assets", () => {
     const plugin = portableAssets();
     const emitFile = vi.fn().mockReturnValue("product_image");
     const error = vi.fn((message: string) => { throw new Error(message); });
-    const handler = typeof plugin.load === "function" ? plugin.load : plugin.load?.handler;
+    const handler = typeof plugin.transform === "function" ? plugin.transform : plugin.transform?.handler;
     if (!handler) throw new Error("Asset loader missing");
-    const output = await handler.call({ emitFile, error } as never, `${process.cwd()}/src/assets/produtos/produto-1.jpg.asset.json`);
+    const output = await handler.call({ emitFile, error } as never, "", `${process.cwd()}/src/assets/produtos/produto-1.jpg.asset.json`);
     expect(emitFile).toHaveBeenCalledWith({
       type: "asset", name: "produto-1.jpg", source: new Uint8Array([255, 216, 255]),
     });
@@ -29,10 +29,10 @@ describe("portable product assets", () => {
       status: 404, headers: { "content-type": "text/html" },
     })));
     const plugin = portableAssets();
-    const handler = typeof plugin.load === "function" ? plugin.load : plugin.load?.handler;
+    const handler = typeof plugin.transform === "function" ? plugin.transform : plugin.transform?.handler;
     if (!handler) throw new Error("Asset loader missing");
     await expect(handler.call({
       emitFile: vi.fn(), error: (message: string) => { throw new Error(message); },
-    } as never, `${process.cwd()}/src/assets/produtos/produto-1.jpg.asset.json`)).rejects.toThrow("Unable to bundle managed asset produto-1.jpg");
+    } as never, "", `${process.cwd()}/src/assets/produtos/produto-1.jpg.asset.json`)).rejects.toThrow("Unable to bundle managed asset produto-1.jpg");
   });
 });
