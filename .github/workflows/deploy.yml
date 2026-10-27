@@ -35,12 +35,12 @@ jobs:
       - name: Determine GitHub Pages base path
         id: site
         run: |
-          if [ -f public/CNAME ]; then
+          if [ -f CNAME ]; then
             echo "site_base=/" >> "$GITHUB_OUTPUT"
-            echo "Custom domain detected. Building from the domain root."
+            echo "Root CNAME cutover flag detected. Building from the domain root."
           else
             echo "site_base=/eletro-cadori/" >> "$GITHUB_OUTPUT"
-            echo "No custom domain file yet. Building the validation site."
+            echo "No root CNAME cutover flag yet. Building the validation site."
           fi
 
       - name: Build website
