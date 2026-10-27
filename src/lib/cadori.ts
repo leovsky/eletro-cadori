@@ -21,7 +21,7 @@ export const marcas = [
 
 export const produtos = [
   {
-    "img": "/eletro-cadori/images/produtos/55cc81adb0dcc.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cc81adb0dcc.jpg`,
     "nome": "MOTOR MONOFÁSICO IP-21",
     "marca": "WEG",
     "categoria": "Weg",
@@ -29,7 +29,7 @@ export const produtos = [
     "referencia": "001"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cc82ac85327.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cc82ac85327.jpg`,
     "nome": "MOTOR MOTOSERRA",
     "marca": "WEG",
     "categoria": "Weg",
@@ -37,7 +37,7 @@ export const produtos = [
     "referencia": "002"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cc857db2619.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cc857db2619.jpg`,
     "nome": "MOTOR MONOFÁSICO IP-55",
     "marca": "WEG",
     "categoria": "Weg",
@@ -45,7 +45,7 @@ export const produtos = [
     "referencia": "003"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cc934a48ba8.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cc934a48ba8.jpg`,
     "nome": "MOTOR JET PUMP",
     "marca": "WEG",
     "categoria": "Weg",
@@ -53,7 +53,7 @@ export const produtos = [
     "referencia": "004"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cc936c5b946.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cc936c5b946.jpg`,
     "nome": "MOTOR TRIFÁSICO IP-21",
     "marca": "WEG",
     "categoria": "Weg",
@@ -61,7 +61,7 @@ export const produtos = [
     "referencia": "005"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cc8fdc1c5c7.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cc8fdc1c5c7.jpg`,
     "nome": "MOTOR WPUMP",
     "marca": "WEG",
     "categoria": "Weg",
@@ -69,7 +69,7 @@ export const produtos = [
     "referencia": "006"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cc91a00d90d.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cc91a00d90d.jpg`,
     "nome": "MOTOFREIO W22",
     "marca": "WEG",
     "categoria": "Weg",
@@ -77,7 +77,7 @@ export const produtos = [
     "referencia": "007"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cc9327b4e55.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cc9327b4e55.jpg`,
     "nome": "MOTOR W22",
     "marca": "WEG",
     "categoria": "Weg",
@@ -85,7 +85,7 @@ export const produtos = [
     "referencia": "008"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cc9a47a3e6d.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cc9a47a3e6d.jpg`,
     "nome": "MOTOFREIO W22 PREMIUM",
     "marca": "WEG",
     "categoria": "Weg",
@@ -93,7 +93,7 @@ export const produtos = [
     "referencia": "009"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cc9acf1f876.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cc9acf1f876.jpg`,
     "nome": "MOTOR W22 PREMIUM",
     "marca": "WEG",
     "categoria": "Weg",
@@ -101,7 +101,7 @@ export const produtos = [
     "referencia": "010"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cc9b34c2f96.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cc9b34c2f96.jpg`,
     "nome": "MOTOR DAHLANDER W22",
     "marca": "WEG",
     "categoria": "Weg",
@@ -109,7 +109,7 @@ export const produtos = [
     "referencia": "011"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cc9b890d162.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cc9b890d162.jpg`,
     "nome": "MOTOR W22 WASH",
     "marca": "WEG",
     "categoria": "Weg",
@@ -117,7 +117,7 @@ export const produtos = [
     "referencia": "012"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cc9be60ab2d.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cc9be60ab2d.jpg`,
     "nome": "MOTOR W22 MAGNET SUPER PREMIUM",
     "marca": "WEG",
     "categoria": "Weg",
@@ -125,7 +125,7 @@ export const produtos = [
     "referencia": "013"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cca2267510f.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cca2267510f.jpg`,
     "nome": "ASP-98",
     "marca": "Schneider",
     "categoria": "Schneider",
@@ -133,7 +133,7 @@ export const produtos = [
     "referencia": "014"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cca24f3cefe.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cca24f3cefe.jpg`,
     "nome": "MBA",
     "marca": "Schneider",
     "categoria": "Schneider",
@@ -141,7 +141,7 @@ export const produtos = [
     "referencia": "015"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cca27af04db.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cca27af04db.jpg`,
     "nome": "MBI-98",
     "marca": "Schneider",
     "categoria": "Schneider",
@@ -149,7 +149,7 @@ export const produtos = [
     "referencia": "016"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cca2e6495db.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cca2e6495db.jpg`,
     "nome": "TAP-02 C",
     "marca": "Schneider",
     "categoria": "Schneider",
@@ -157,7 +157,7 @@ export const produtos = [
     "referencia": "017"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cca30c4af5b.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cca30c4af5b.jpg`,
     "nome": "BC-98",
     "marca": "Schneider",
     "categoria": "Schneider",
@@ -165,7 +165,7 @@ export const produtos = [
     "referencia": "018"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cca33386689.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cca33386689.jpg`,
     "nome": "BC-91 S",
     "marca": "Schneider",
     "categoria": "Schneider",
@@ -173,7 +173,7 @@ export const produtos = [
     "referencia": "019"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cca35da28f8.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cca35da28f8.jpg`,
     "nome": "BC-91 T BRONZE",
     "marca": "Schneider",
     "categoria": "Schneider",
@@ -181,7 +181,7 @@ export const produtos = [
     "referencia": "020"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cca3b716d37.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cca3b716d37.jpg`,
     "nome": "BC-92 S 1",
     "marca": "Schneider",
     "categoria": "Schneider",
@@ -189,7 +189,7 @@ export const produtos = [
     "referencia": "021"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cca3e98b24f.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cca3e98b24f.jpg`,
     "nome": "VERSAJET (VJ)",
     "marca": "Schneider",
     "categoria": "Schneider",
@@ -197,7 +197,7 @@ export const produtos = [
     "referencia": "022"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cca41773c20.png",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cca41773c20.png`,
     "nome": "TAP-20/35 C",
     "marca": "Schneider",
     "categoria": "Schneider",
@@ -205,7 +205,7 @@ export const produtos = [
     "referencia": "023"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cca44500bbe.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cca44500bbe.jpg`,
     "nome": "SUB DRIVE INLINE 1100",
     "marca": "Schneider",
     "categoria": "Schneider",
@@ -213,7 +213,7 @@ export const produtos = [
     "referencia": "024"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cca46c1d871.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cca46c1d871.jpg`,
     "nome": "BCA-40",
     "marca": "Schneider",
     "categoria": "Schneider",
@@ -221,7 +221,7 @@ export const produtos = [
     "referencia": "025"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cca49513df6.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cca49513df6.jpg`,
     "nome": "SUB-NY",
     "marca": "Schneider",
     "categoria": "Schneider",
@@ -229,7 +229,7 @@ export const produtos = [
     "referencia": "026"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cca4cd98e8a.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cca4cd98e8a.jpg`,
     "nome": "BPI-21",
     "marca": "Schneider",
     "categoria": "Schneider",
@@ -237,7 +237,7 @@ export const produtos = [
     "referencia": "027"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cca50139ef6.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cca50139ef6.jpg`,
     "nome": "BPI-92",
     "marca": "Schneider",
     "categoria": "Schneider",
@@ -245,7 +245,7 @@ export const produtos = [
     "referencia": "028"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cca57b7ef61.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cca57b7ef61.jpg`,
     "nome": "ME-1",
     "marca": "Schneider",
     "categoria": "Schneider",
@@ -253,7 +253,7 @@ export const produtos = [
     "referencia": "029"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cca59ff3566.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cca59ff3566.jpg`,
     "nome": "BT4",
     "marca": "Schneider",
     "categoria": "Schneider",
@@ -261,7 +261,7 @@ export const produtos = [
     "referencia": "030"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cca5c8e7165.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cca5c8e7165.jpg`,
     "nome": "ME-2",
     "marca": "Schneider",
     "categoria": "Schneider",
@@ -269,7 +269,7 @@ export const produtos = [
     "referencia": "031"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cca5f681bae.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cca5f681bae.jpg`,
     "nome": "BC-22",
     "marca": "Schneider",
     "categoria": "Schneider",
@@ -277,7 +277,7 @@ export const produtos = [
     "referencia": "032"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cca61b8fbb2.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cca61b8fbb2.jpg`,
     "nome": "MCI-RE",
     "marca": "Schneider",
     "categoria": "Schneider",
@@ -285,7 +285,7 @@ export const produtos = [
     "referencia": "033"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cca642db922.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cca642db922.jpg`,
     "nome": "ME-HI",
     "marca": "Schneider",
     "categoria": "Schneider",
@@ -293,7 +293,7 @@ export const produtos = [
     "referencia": "034"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cca67c1d1ba.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cca67c1d1ba.jpg`,
     "nome": "BCS-205",
     "marca": "Schneider",
     "categoria": "Schneider",
@@ -301,7 +301,7 @@ export const produtos = [
     "referencia": "035"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cca6a2efcc8.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cca6a2efcc8.jpg`,
     "nome": "BCA-41",
     "marca": "Schneider",
     "categoria": "Schneider",
@@ -309,7 +309,7 @@ export const produtos = [
     "referencia": "036"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cca6d368813.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cca6d368813.jpg`,
     "nome": "BC-21",
     "marca": "Schneider",
     "categoria": "Schneider",
@@ -317,7 +317,7 @@ export const produtos = [
     "referencia": "037"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cca6f6e570e.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cca6f6e570e.jpg`,
     "nome": "BCS-365",
     "marca": "Schneider",
     "categoria": "Schneider",
@@ -325,7 +325,7 @@ export const produtos = [
     "referencia": "038"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cca71c4a4c2.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cca71c4a4c2.jpg`,
     "nome": "VME",
     "marca": "Schneider",
     "categoria": "Schneider",
@@ -333,7 +333,7 @@ export const produtos = [
     "referencia": "039"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55cca74221110.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55cca74221110.jpg`,
     "nome": "BPR-12",
     "marca": "Schneider",
     "categoria": "Schneider",
@@ -341,7 +341,7 @@ export const produtos = [
     "referencia": "040"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d70fca33f5e.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d70fca33f5e.jpg`,
     "nome": "LAVADORA K1.100",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -349,7 +349,7 @@ export const produtos = [
     "referencia": "042"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d70ff24bb04.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d70ff24bb04.jpg`,
     "nome": "LAVADORA K2 STANDARD",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -357,7 +357,7 @@ export const produtos = [
     "referencia": "043"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d7101949bf9.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d7101949bf9.jpg`,
     "nome": "LAVADORA K3 ADVANCED",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -365,7 +365,7 @@ export const produtos = [
     "referencia": "044"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d710477b633.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d710477b633.jpg`,
     "nome": "LAVADORA K2.500 BASIC",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -373,7 +373,7 @@ export const produtos = [
     "referencia": "45"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d7107614f62.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d7107614f62.jpg`,
     "nome": "LAVADORA K 3.30",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -381,7 +381,7 @@ export const produtos = [
     "referencia": "046"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d710a4bb5d2.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d710a4bb5d2.jpg`,
     "nome": "LAVADORA K 5 POWER PLUS",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -389,7 +389,7 @@ export const produtos = [
     "referencia": "047"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d710d73ef37.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d710d73ef37.jpg`,
     "nome": "LAVADORA HD 5/11 C",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -397,7 +397,7 @@ export const produtos = [
     "referencia": "048"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d7110250b6d.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d7110250b6d.jpg`,
     "nome": "LAVADORA HD 5/12 C",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -405,7 +405,7 @@ export const produtos = [
     "referencia": "049"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d71163f0b6b.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d71163f0b6b.jpg`,
     "nome": "LAVADORA HD 6/15 C",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -413,7 +413,7 @@ export const produtos = [
     "referencia": "050"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d7119d7d6a8.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d7119d7d6a8.jpg`,
     "nome": "LAVADORA HD 6/15 CAGE PLUS",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -421,7 +421,7 @@ export const produtos = [
     "referencia": "051"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d711ce986ab.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d711ce986ab.jpg`,
     "nome": "LAVADORA HD 585",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -429,7 +429,7 @@ export const produtos = [
     "referencia": "052"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d711eea2757.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d711eea2757.jpg`,
     "nome": "LAVADORA HD 7/11-4",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -437,7 +437,7 @@ export const produtos = [
     "referencia": "053"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d71215a84ea.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d71215a84ea.jpg`,
     "nome": "LAVADORA HD 6/15-4",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -445,7 +445,7 @@ export const produtos = [
     "referencia": "054"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d71237d7c42.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d71237d7c42.jpg`,
     "nome": "LAVADORA HD 7/15 - 4 CAGE",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -453,7 +453,7 @@ export const produtos = [
     "referencia": "055"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d7126931367.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d7126931367.jpg`,
     "nome": "LAVADORA HD 7/13 – 4 CAGE",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -461,7 +461,7 @@ export const produtos = [
     "referencia": "056"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d71298d26f2.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d71298d26f2.jpg`,
     "nome": "LAVADORA HD 10/18 – 4 CAGE",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -469,7 +469,7 @@ export const produtos = [
     "referencia": "057"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d712bb62a0c.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d712bb62a0c.jpg`,
     "nome": "LAVADORA HD 10/25 – 4 CAGE",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -477,7 +477,7 @@ export const produtos = [
     "referencia": "058"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d712dc5f3c2.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d712dc5f3c2.jpg`,
     "nome": "LAVADORA HD 12/15 S",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -485,7 +485,7 @@ export const produtos = [
     "referencia": "059"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d7132ee2d2c.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d7132ee2d2c.jpg`,
     "nome": "LAVADORA HDS 5/13UX",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -493,7 +493,7 @@ export const produtos = [
     "referencia": "060"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d71357b91ae.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d71357b91ae.jpg`,
     "nome": "LAVADORA HDS-E 8/16 – 4M",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -501,7 +501,7 @@ export const produtos = [
     "referencia": "061"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d713a4d1852.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d713a4d1852.jpg`,
     "nome": "LAVADORA HDS 8/17 – 4M",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -509,7 +509,7 @@ export const produtos = [
     "referencia": "062"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d713df1e28d.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d713df1e28d.jpg`,
     "nome": "LAVADORA HDS 12/18 – 4S",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -517,7 +517,7 @@ export const produtos = [
     "referencia": "063"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d71404e6084.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d71404e6084.jpg`,
     "nome": "LAVADORA HD 9/50 PE",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -525,7 +525,7 @@ export const produtos = [
     "referencia": "064"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d7142cbf548.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d7142cbf548.jpg`,
     "nome": "LAVADORA HD 13/35 PE",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -533,7 +533,7 @@ export const produtos = [
     "referencia": "065"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d71461dbd6b.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d71461dbd6b.jpg`,
     "nome": "VARREDEIRA S 650",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -541,7 +541,7 @@ export const produtos = [
     "referencia": "066"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d714848ceaf.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d714848ceaf.jpg`,
     "nome": "VARREDEIRA ELÉTRICA K 55 PLUS",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -549,7 +549,7 @@ export const produtos = [
     "referencia": "067"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d714e0a81c3.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d714e0a81c3.jpg`,
     "nome": "ASPIRADOR VC 5.100",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -557,7 +557,7 @@ export const produtos = [
     "referencia": "068"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d71507a63e0.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d71507a63e0.jpg`,
     "nome": "ASPIRADOR A 2003",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -565,7 +565,7 @@ export const produtos = [
     "referencia": "069"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d7153868b04.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d7153868b04.jpg`,
     "nome": "ASPIRADOR EXTRATOR SE 4001",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -573,7 +573,7 @@ export const produtos = [
     "referencia": "070"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d715718e5a9.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d715718e5a9.jpg`,
     "nome": "ASPIRADOR NT 20/1",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -581,7 +581,7 @@ export const produtos = [
     "referencia": "071"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d715aa5ab01.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d715aa5ab01.jpg`,
     "nome": "ASPIRADOR NT 48/1",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -589,7 +589,7 @@ export const produtos = [
     "referencia": "072"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d715d8328f4.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d715d8328f4.jpg`,
     "nome": "ASPIRADOR NT 65/2 ECO",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -597,7 +597,7 @@ export const produtos = [
     "referencia": "073"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d716064b152.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d716064b152.jpg`,
     "nome": "ASPIRADOR T 15/1",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -605,7 +605,7 @@ export const produtos = [
     "referencia": "074"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d716290c09f.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d716290c09f.jpg`,
     "nome": "ASPIRADOR COSTAL BV 5/1",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -613,7 +613,7 @@ export const produtos = [
     "referencia": "075"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d71653264c9.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d71653264c9.jpg`,
     "nome": "ASPIRADOR CV 66/2",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -621,7 +621,7 @@ export const produtos = [
     "referencia": "076"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d71673bc2ac.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d71673bc2ac.jpg`,
     "nome": "ASPIRADOR EB 30/1",
     "marca": "Kärcher",
     "categoria": "Karcher",
@@ -629,7 +629,7 @@ export const produtos = [
     "referencia": "077"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d717aa8f0ac.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d717aa8f0ac.jpg`,
     "nome": "APARADOR DE CERCA VIVA HT-500",
     "marca": "Trapp",
     "categoria": "Trapp",
@@ -637,7 +637,7 @@ export const produtos = [
     "referencia": "078"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d717d6bc7c4.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d717d6bc7c4.jpg`,
     "nome": "APARADOR DE GRAMA MASTER 1000 PLUS",
     "marca": "Trapp",
     "categoria": "Trapp",
@@ -645,7 +645,7 @@ export const produtos = [
     "referencia": "079"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d717fc68687.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d717fc68687.jpg`,
     "nome": "APARADOR DE GRAMA MASTER 1000 L",
     "marca": "Trapp",
     "categoria": "Trapp",
@@ -653,7 +653,7 @@ export const produtos = [
     "referencia": "080"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d71862d6b94.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d71862d6b94.jpg`,
     "nome": "APARADOR DE GRAMA MASTER 500 L",
     "marca": "Trapp",
     "categoria": "Trapp",
@@ -661,7 +661,7 @@ export const produtos = [
     "referencia": "081"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d718a501fb0.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d718a501fb0.jpg`,
     "nome": "APARADOR DE GRAMA MASTER 700 L",
     "marca": "Trapp",
     "categoria": "Trapp",
@@ -669,7 +669,7 @@ export const produtos = [
     "referencia": "082"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d718c6e2feb.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d718c6e2feb.jpg`,
     "nome": "APARADOR DE GRAMA MASTER 800",
     "marca": "Trapp",
     "categoria": "Trapp",
@@ -677,7 +677,7 @@ export const produtos = [
     "referencia": "083"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d71946bddbf.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d71946bddbf.jpg`,
     "nome": "APARADOR DE GRAMA MASTER 800 PLUS",
     "marca": "Trapp",
     "categoria": "Trapp",
@@ -685,7 +685,7 @@ export const produtos = [
     "referencia": "084"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d71970eed1f.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d71970eed1f.jpg`,
     "nome": "APARADOR DE GRAMA SUPER 1000",
     "marca": "Trapp",
     "categoria": "Trapp",
@@ -693,7 +693,7 @@ export const produtos = [
     "referencia": "085"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d7199666dcf.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d7199666dcf.jpg`,
     "nome": "APARADOR DE GRAMA SUPER 1000 PLUS",
     "marca": "Trapp",
     "categoria": "Trapp",
@@ -701,7 +701,7 @@ export const produtos = [
     "referencia": "086"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d719b60bacc.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d719b60bacc.jpg`,
     "nome": "APARADOR DE GRAMA SUPER TURBO 1000",
     "marca": "Trapp",
     "categoria": "Trapp",
@@ -709,7 +709,7 @@ export const produtos = [
     "referencia": "087"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d719d34129d.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d719d34129d.jpg`,
     "nome": "APARADOR DE GRAMA TURBO MASTER 1000",
     "marca": "Trapp",
     "categoria": "Trapp",
@@ -717,7 +717,7 @@ export const produtos = [
     "referencia": "088"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d71f406e963.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d71f406e963.jpg`,
     "nome": "CORTADOR DE GRAMA À GASOLINA CG-40",
     "marca": "Trapp",
     "categoria": "Trapp",
@@ -725,7 +725,7 @@ export const produtos = [
     "referencia": "089"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d720c11bca2.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d720c11bca2.jpg`,
     "nome": "CORTADOR DE GRAMA À GASOLINA JT-55C",
     "marca": "Trapp",
     "categoria": "Trapp",
@@ -733,7 +733,7 @@ export const produtos = [
     "referencia": "090"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d720ef2aa4a.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d720ef2aa4a.jpg`,
     "nome": "CORTADOR DE GRAMA À GASOLINA MC-500G",
     "marca": "Trapp",
     "categoria": "Trapp",
@@ -741,7 +741,7 @@ export const produtos = [
     "referencia": "091"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d7212331a48.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d7212331a48.jpg`,
     "nome": "CORTADOR DE GRAMA À GASOLINA MC-650G",
     "marca": "Trapp",
     "categoria": "Trapp",
@@ -749,7 +749,7 @@ export const produtos = [
     "referencia": "092"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d72159e3da7.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d72159e3da7.jpg`,
     "nome": "CORTADOR DE GRAMA À GASOLINA RC-55C RECICLADORA",
     "marca": "Trapp",
     "categoria": "Trapp",
@@ -757,7 +757,7 @@ export const produtos = [
     "referencia": "093"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d721eb02302.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d721eb02302.jpg`,
     "nome": "CORTADOR DE GRAMA ELÉTRICO CG-40E",
     "marca": "Trapp",
     "categoria": "Trapp",
@@ -765,7 +765,7 @@ export const produtos = [
     "referencia": "094"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d7222042c1b.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d7222042c1b.jpg`,
     "nome": "CORTADOR DE GRAMA ELÉTRICO KM-400",
     "marca": "Trapp",
     "categoria": "Trapp",
@@ -773,7 +773,7 @@ export const produtos = [
     "referencia": "095"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d723e15b980.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d723e15b980.jpg`,
     "nome": "CORTADOR DE GRAMA ELÉTRICO MB-51E",
     "marca": "Trapp",
     "categoria": "Trapp",
@@ -781,7 +781,7 @@ export const produtos = [
     "referencia": "096"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d724057e400.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d724057e400.jpg`,
     "nome": "CORTADOR DE GRAMA ELÉTRICO MC-20L",
     "marca": "Trapp",
     "categoria": "Trapp",
@@ -789,7 +789,7 @@ export const produtos = [
     "referencia": "097"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d72436205bc.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d72436205bc.jpg`,
     "nome": "CORTADOR DE GRAMA ELÉTRICO WM-350",
     "marca": "Trapp",
     "categoria": "Trapp",
@@ -797,7 +797,7 @@ export const produtos = [
     "referencia": "098"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d724727ccbc.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d724727ccbc.jpg`,
     "nome": "CORTADOR DE GRAMA ELÉTRICO MC-35L",
     "marca": "Trapp",
     "categoria": "Trapp",
@@ -805,7 +805,7 @@ export const produtos = [
     "referencia": "099"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d724a61ac84.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d724a61ac84.jpg`,
     "nome": "CORTADOR DE GRAMA ELÉTRICO MC-50E",
     "marca": "Trapp",
     "categoria": "Trapp",
@@ -813,7 +813,7 @@ export const produtos = [
     "referencia": "0100"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d724ce5d152.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d724ce5d152.jpg`,
     "nome": "CORTADOR DE GRAMA ELÉTRICO MC-50E",
     "marca": "Trapp",
     "categoria": "Trapp",
@@ -821,7 +821,7 @@ export const produtos = [
     "referencia": "0101"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d724f219e47.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d724f219e47.jpg`,
     "nome": "ROÇADEIRA LATERAL ELÉTRICA MASTER 1000",
     "marca": "Trapp",
     "categoria": "Trapp",
@@ -829,7 +829,7 @@ export const produtos = [
     "referencia": "0102"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d7251e4f2d2.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d7251e4f2d2.jpg`,
     "nome": "SOPRADOR/ASPIRADOR ELÉTRIC0 SF 3000",
     "marca": "Trapp",
     "categoria": "Trapp",
@@ -837,7 +837,7 @@ export const produtos = [
     "referencia": "0103"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d72543c45eb.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d72543c45eb.jpg`,
     "nome": "TRATOR DE GRAMA MURRAY 14,5HP 42”",
     "marca": "Trapp",
     "categoria": "Trapp",
@@ -845,7 +845,7 @@ export const produtos = [
     "referencia": "0104"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d725659d24f.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d725659d24f.jpg`,
     "nome": "TRATOR DE GRAMA MURRAY 17,5HP 42”",
     "marca": "Trapp",
     "categoria": "Trapp",
@@ -853,7 +853,7 @@ export const produtos = [
     "referencia": "0105"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d7258eb9380.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d7258eb9380.jpg`,
     "nome": "TRATOR DE GRAMA MURRAY 20HP 48”",
     "marca": "Trapp",
     "categoria": "Trapp",
@@ -861,7 +861,7 @@ export const produtos = [
     "referencia": "0106"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d725b890cf1.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d725b890cf1.jpg`,
     "nome": "TRATOR DE GRAMA MURRAY 22HP 48”",
     "marca": "Trapp",
     "categoria": "Trapp",
@@ -869,7 +869,7 @@ export const produtos = [
     "referencia": "0107"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d7266685d2c.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d7266685d2c.jpg`,
     "nome": "TRATOR DE GRAMA MURRAY 26HP 54”",
     "marca": "Trapp",
     "categoria": "Trapp",
@@ -877,7 +877,7 @@ export const produtos = [
     "referencia": "0108"
   },
   {
-    "img": "/eletro-cadori/images/produtos/55d7260643509.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/55d7260643509.jpg`,
     "nome": "CARRETA PARA TRATOR DE GRAMA MURRAY",
     "marca": "Trapp",
     "categoria": "Trapp",
@@ -885,7 +885,7 @@ export const produtos = [
     "referencia": "0109"
   },
   {
-    "img": "/eletro-cadori/images/produtos/56126a2f804f7.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/56126a2f804f7.jpg`,
     "nome": "CSL 10BR/100",
     "marca": "Schulz",
     "categoria": "Schulz",
@@ -893,7 +893,7 @@ export const produtos = [
     "referencia": "0568"
   },
   {
-    "img": "/eletro-cadori/images/produtos/56126b49af38a.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/56126b49af38a.jpg`,
     "nome": "CSI 4BR/AD",
     "marca": "Schulz",
     "categoria": "Schulz",
@@ -901,7 +901,7 @@ export const produtos = [
     "referencia": "5478"
   },
   {
-    "img": "/eletro-cadori/images/produtos/56126c39e1516.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/56126c39e1516.jpg`,
     "nome": "MSV 6/30",
     "marca": "Schulz",
     "categoria": "Schulz",
@@ -909,7 +909,7 @@ export const produtos = [
     "referencia": "5896"
   },
   {
-    "img": "/eletro-cadori/images/produtos/56126d14a8ab8.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/56126d14a8ab8.jpg`,
     "nome": "MSWV 60/425",
     "marca": "Schulz",
     "categoria": "Schulz",
@@ -917,7 +917,7 @@ export const produtos = [
     "referencia": "5987"
   },
   {
-    "img": "/eletro-cadori/images/produtos/56126ec024300.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/56126ec024300.jpg`,
     "nome": "APARADOR DE GRAMA - GAM-1000I",
     "marca": "Garthen",
     "categoria": "Garthen",
@@ -925,7 +925,7 @@ export const produtos = [
     "referencia": "0023"
   },
   {
-    "img": "/eletro-cadori/images/produtos/56126f5e8f7a1.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/56126f5e8f7a1.jpg`,
     "nome": "CORTADOR DE GRAMA Á COMBUSTÃO - GSR-6000",
     "marca": "Garthen",
     "categoria": "Garthen",
@@ -933,7 +933,7 @@ export const produtos = [
     "referencia": "0351"
   },
   {
-    "img": "/eletro-cadori/images/produtos/56126fb7d53d7.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/56126fb7d53d7.jpg`,
     "nome": "CORTADOR DE GRAMA - ELÉTRICO - GC-2200I",
     "marca": "Garthen",
     "categoria": "Garthen",
@@ -941,7 +941,7 @@ export const produtos = [
     "referencia": "5614685"
   },
   {
-    "img": "/eletro-cadori/images/produtos/5612700be65bf.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/5612700be65bf.jpg`,
     "nome": "ROÇADEIRA LATERAL A COMBUSTÃO - CG-450",
     "marca": "Garthen",
     "categoria": "Garthen",
@@ -949,7 +949,7 @@ export const produtos = [
     "referencia": "256565"
   },
   {
-    "img": "/eletro-cadori/images/produtos/5612713a220f3.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/5612713a220f3.jpg`,
     "nome": "AP- 3C",
     "marca": "Dancor",
     "categoria": "Dancor",
@@ -957,7 +957,7 @@ export const produtos = [
     "referencia": "2465"
   },
   {
-    "img": "/eletro-cadori/images/produtos/5612717d07876.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/5612717d07876.jpg`,
     "nome": "PF-17",
     "marca": "Dancor",
     "categoria": "Dancor",
@@ -965,7 +965,7 @@ export const produtos = [
     "referencia": "2318"
   },
   {
-    "img": "/eletro-cadori/images/produtos/561271ce80d8e.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/561271ce80d8e.jpg`,
     "nome": "CHS-17",
     "marca": "Dancor",
     "categoria": "Dancor",
@@ -973,7 +973,7 @@ export const produtos = [
     "referencia": "564198"
   },
   {
-    "img": "/eletro-cadori/images/produtos/5612720d29317.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/5612720d29317.jpg`,
     "nome": "DS-04",
     "marca": "Dancor",
     "categoria": "Dancor",
@@ -981,7 +981,7 @@ export const produtos = [
     "referencia": "5649878"
   },
   {
-    "img": "/eletro-cadori/images/produtos/561273f720cfa.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/561273f720cfa.jpg`,
     "nome": "FOX / FOX-CI 1,0CV",
     "marca": "Famac",
     "categoria": "Famac",
@@ -989,7 +989,7 @@ export const produtos = [
     "referencia": "5874"
   },
   {
-    "img": "/eletro-cadori/images/produtos/56127473c1cb2.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/56127473c1cb2.jpg`,
     "nome": "F5A-R-ESP / F5B-R 1/3CV",
     "marca": "Famac",
     "categoria": "Famac",
@@ -997,7 +997,7 @@ export const produtos = [
     "referencia": "64589"
   },
   {
-    "img": "/eletro-cadori/images/produtos/561274c4822b8.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/561274c4822b8.jpg`,
     "nome": "XKm50-1 1/3CV",
     "marca": "Famac",
     "categoria": "Famac",
@@ -1005,7 +1005,7 @@ export const produtos = [
     "referencia": "5489"
   },
   {
-    "img": "/eletro-cadori/images/produtos/5612750db6189.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/5612750db6189.jpg`,
     "nome": "SS 10 1,0CV",
     "marca": "Famac",
     "categoria": "Famac",
@@ -1013,7 +1013,7 @@ export const produtos = [
     "referencia": "4785"
   },
   {
-    "img": "/eletro-cadori/images/produtos/56225ae297da3.jpg",
+    "img": `${import.meta.env.BASE_URL}images/produtos/56225ae297da3.jpg`,
     "nome": "BCS-S1",
     "marca": "Schneider",
     "categoria": "Schneider",
