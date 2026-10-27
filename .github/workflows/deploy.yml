@@ -32,24 +32,39 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Determine GitHub Pages base path
+        id: site
+        run: |
+          if [ -f public/CNAME ]; then
+            echo "site_base=/" >> "$GITHUB_OUTPUT"
+            echo "Custom domain detected. Building from the domain root."
+          else
+            echo "site_base=/eletro-cadori/" >> "$GITHUB_OUTPUT"
+            echo "No custom domain file yet. Building the validation site."
+          fi
+
       - name: Build website
-        run: npm run build -- --base=/eletro-cadori/
+        run: npm run build -- --base="${{ steps.site.outputs.site_base }}"
 
       - name: Support direct navigation to application routes
         run: cp dist/index.html dist/404.html
 
       - name: Validate published base and product images
+        env:
+          SITE_BASE: ${{ steps.site.outputs.site_base }}
         run: |
           node --input-type=module <<'NODE'
           import assert from 'node:assert/strict';
           import { readFileSync, existsSync, readdirSync } from 'node:fs';
+          const base = process.env.SITE_BASE;
+          assert(base === '/' || base === '/eletro-cadori/', `Unexpected site base: ${base}`);
           const html = readFileSync('dist/index.html', 'utf8');
           const paths = [...html.matchAll(/(?:src|href)="([^"]+)"/g)]
             .map(match => match[1]).filter(path => path.startsWith('/'));
           assert(paths.length > 0, 'No local resources found');
           for (const path of paths) {
-            assert(path.startsWith('/eletro-cadori/'), `Incorrect public base: ${path}`);
-            assert(existsSync(`dist/${path.slice('/eletro-cadori/'.length)}`), `Missing resource: ${path}`);
+            assert(path.startsWith(base), `Incorrect public base for ${base}: ${path}`);
+            assert(existsSync(`dist/${path.slice(base.length)}`), `Missing resource: ${path}`);
           }
           const productDir = 'dist/images/produtos';
           assert(existsSync(productDir), 'Missing public/images/produtos output directory');
@@ -62,7 +77,7 @@ jobs:
             }
           }
           assert.equal(readFileSync('dist/404.html', 'utf8'), html);
-          console.log(`Public base, local resources, ${images.length} product images and route fallback validated`);
+          console.log(`Base ${base}, local resources, ${images.length} product images and route fallback validated`);
           NODE
 
       - name: Upload build
