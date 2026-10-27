@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import { CheckCircle, ChevronRight, Wrench, Zap, Droplets, Wind } from "lucide-react";
@@ -11,7 +12,10 @@ const servicos = [
   { icon: Wrench, titulo: "Lavadoras e jardim", desc: "Lavadoras de alta pressão, aparadores e roçadeiras." },
 ];
 
-const Index = () => (
+const Index = () => {
+  const [descricoesExpandidas, setDescricoesExpandidas] = useState<Set<string>>(() => new Set());
+
+  return (
   <Layout>
     <section className="bg-background pt-8 pb-14 md:py-24 overflow-hidden">
       <div className="container mx-auto px-4 md:px-8 grid lg:grid-cols-2 gap-14 items-center">
@@ -62,11 +66,38 @@ const Index = () => (
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
           {produtos.slice(0, 8).map((p) => (
-            <div key={p.nome} className="bg-cream rounded-xl p-3 md:p-6 hover:shadow-lg transition-shadow">
+            <div key={p.referencia} className="bg-cream rounded-xl p-3 md:p-6 hover:shadow-lg transition-shadow">
               {p.img && <div className="bg-background rounded-lg mb-4 aspect-[3/4] flex items-center justify-center overflow-hidden"><img src={p.img} alt={p.nome} loading="lazy" className="w-full h-full object-contain" /></div>}
               <span className="text-xs font-bold uppercase tracking-widest text-primary">{p.marca}</span>
               <h3 className="font-display uppercase text-base md:text-xl font-bold text-navy-900 mt-1 mb-1 md:mb-2 leading-tight">{p.nome}</h3>
-              <p className="text-xs md:text-sm text-muted-foreground hidden sm:block">{p.desc}</p>
+              <div className="hidden sm:block">
+                <p
+                  className="text-xs md:text-sm text-muted-foreground"
+                  style={descricoesExpandidas.has(p.referencia) ? undefined : {
+                    display: "-webkit-box",
+                    WebkitLineClamp: 2,
+                    WebkitBoxOrient: "vertical",
+                    overflow: "hidden",
+                  }}
+                >
+                  {p.desc}
+                </p>
+                {p.desc.length > 100 && (
+                  <button
+                    type="button"
+                    aria-expanded={descricoesExpandidas.has(p.referencia)}
+                    onClick={() => setDescricoesExpandidas((atuais) => {
+                      const novas = new Set(atuais);
+                      if (novas.has(p.referencia)) novas.delete(p.referencia);
+                      else novas.add(p.referencia);
+                      return novas;
+                    })}
+                    className="mt-1 text-xs md:text-sm font-semibold text-primary hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded-sm"
+                  >
+                    {descricoesExpandidas.has(p.referencia) ? "Ver menos" : "Ver mais..."}
+                  </button>
+                )}
+              </div>
             </div>
           ))}
         </div>
@@ -103,6 +134,7 @@ const Index = () => (
       </div>
     </section>
   </Layout>
-);
+  );
+};
 
 export default Index;
