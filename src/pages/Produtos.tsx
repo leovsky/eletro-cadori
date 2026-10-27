@@ -36,14 +36,14 @@ const Produtos = () => {
           {lista.length > 0 ? (
             <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
               {lista.map((p) => (
-                <article key={p.nome} className="bg-cream rounded-xl p-3 md:p-6 flex flex-col">
+                <article key={p.referencia} className="bg-cream rounded-xl p-3 md:p-6 flex flex-col">
                   {p.img && <div className="bg-background rounded-lg mb-4 aspect-[3/4] flex items-center justify-center overflow-hidden"><img src={p.img} alt={p.nome} loading="lazy" className="w-full h-full object-contain" /></div>}
                   <span className="text-xs font-bold uppercase tracking-widest text-primary">{p.marca}</span>
                   <h3 className="font-display uppercase text-base md:text-2xl font-bold text-navy-900 mt-1 mb-2 leading-tight">{p.nome}</h3>
                   <div className="flex-1 hidden sm:block">
                     <p
                       className="text-xs md:text-sm text-muted-foreground"
-                      style={descricoesExpandidas.has(p.nome) ? undefined : {
+                      style={descricoesExpandidas.has(p.referencia) ? undefined : {
                         display: "-webkit-box",
                         WebkitLineClamp: 2,
                         WebkitBoxOrient: "vertical",
@@ -55,16 +55,16 @@ const Produtos = () => {
                     {p.desc.length > 100 && (
                       <button
                         type="button"
-                        aria-expanded={descricoesExpandidas.has(p.nome)}
+                        aria-expanded={descricoesExpandidas.has(p.referencia)}
                         onClick={() => setDescricoesExpandidas((atuais) => {
                           const novas = new Set(atuais);
-                          if (novas.has(p.nome)) novas.delete(p.nome);
-                          else novas.add(p.nome);
+                          if (novas.has(p.referencia)) novas.delete(p.referencia);
+                          else novas.add(p.referencia);
                           return novas;
                         })}
                         className="mt-1 text-xs md:text-sm font-semibold text-primary hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded-sm"
                       >
-                        {descricoesExpandidas.has(p.nome) ? "Ver menos" : "Ver mais..."}
+                        {descricoesExpandidas.has(p.referencia) ? "Ver menos" : "Ver mais..."}
                       </button>
                     )}
                   </div>
